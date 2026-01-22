@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lanuka Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- EYE -->
+<div id="eye-screen" class="screen active">
+  <img id="eye-img" src="images/eye.jpg">
+  <div id="eye-text">
+    CLICK TO ENTER<br>
+    <span>LANUKA’S BRAIN</span>
+  </div>
+</div>
+
+<!-- BRAIN -->
+<div id="brain-screen" class="screen">
+  <img src="images/brain.jpg">
+  <div class="folders">
+    <div class="folder" data-target="about-screen">ABOUT LANUKA</div>
+    <div class="folder" data-target="films-screen">FILMS</div>
+    <div class="folder" data-target="commercials-screen">COMMERCIALS</div>
+    <div class="folder" data-target="music-screen">MUSIC VIDEOS</div>
+    <div class="folder" data-target="data-screen">DATA OF LANUKA</div>
+    <div class="folder" data-target="end-screen">END OF THE BRAIN</div>
+
+
+
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+
+  <div class="about-content">
+    <img src="images/lanuka.jpg" class="about-photo">
+
+    <div class="about-text">
+      <h1>ABOUT LANUKA</h1>
+
+      <p>
+        Hi, I’m Lanuka from Georgia. I’m a big film nerd and I work mainly in
+        commercial and film production. I started working in this industry
+        two years ago and have worked on many projects — here I’m sharing
+        a selected few.
+      </p>
+
+      <ul>
+        <li>Director’s / Producer’s PA</li>
+        <li>2nd AD</li>
+        <li>Location Scout</li>
+        <li>Casting Department</li>
+      </ul>
+
+      <p class="meta">
+        Caucasus University — PR & Communications<br>
+        Born 23.08.2004 · Based in Georgia
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- FILMS -->
+<div id="films-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+
+  <h1 class="films-title">FILMS</h1>
+
+  <div class="films-row">
+    <div class="film-card" data-film="tmifm"><img src="images/films/tmifm.jpg"></div>
+    <div class="film-card" data-film="home"><img src="images/films/home.jpg"></div>
+    <div class="film-card" data-film="cov"><img src="images/films/cov.jpg"></div>
+    <div class="film-card" data-film="klifhaus"><img src="images/films/klifhaus.jpg"></div>
+  </div>
+
+  <p class="films-note">
+    I have also worked on Egyptian and Arabic TV shows and I am currently
+    working in pre-production on Ian Pons Jewell’s upcoming film.
+  </p>
+</div>
+
+<!-- COMMERCIALS -->
+<div id="commercials-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+  <h1 class="commercials-title">COMMERCIALS</h1>
+
+  <div class="commercials-row">
+   <img src="images/commercials/c03.jpg" class="commercial-item" data-commercial="c03">
+<img src="images/commercials/c04.jpg" class="commercial-item" data-commercial="c04">
+<img src="images/commercials/c05.jpg" class="commercial-item" data-commercial="c05">
+<img src="images/commercials/c06.jpg" class="commercial-item" data-commercial="c06">
+<img src="images/commercials/c07.jpg" class="commercial-item" data-commercial="c07">
+<img src="images/commercials/c08.jpg" class="commercial-item" data-commercial="c08">
+<img src="images/commercials/c09.jpg" class="commercial-item" data-commercial="c09">
+<img src="images/commercials/c10.jpg" class="commercial-item" data-commercial="c10">
+<img src="images/commercials/c11.jpg" class="commercial-item" data-commercial="c11">
+<img src="images/commercials/c12.jpg" class="commercial-item" data-commercial="c12">
+<img src="images/commercials/c13.jpg" class="commercial-item" data-commercial="c13">
+<img src="images/commercials/c14.jpg" class="commercial-item" data-commercial="c14">
+<img src="images/commercials/c15.jpg" class="commercial-item" data-commercial="c15">
+<img src="images/commercials/c16.jpg" class="commercial-item" data-commercial="c16">
+<img src="images/commercials/c17.jpg" class="commercial-item" data-commercial="c17">
+<img src="images/commercials/c18.jpg" class="commercial-item" data-commercial="c18">
+<img src="images/commercials/c19.jpg" class="commercial-item" data-commercial="c19">
+<img src="images/commercials/c20.jpg" class="commercial-item" data-commercial="c20">
+<img src="images/commercials/c21.jpg" class="commercial-item" data-commercial="c21">
+<img src="images/commercials/c22.jpg" class="commercial-item" data-commercial="c22">
+<img src="images/commercials/c23.jpg" class="commercial-item" data-commercial="c23">
+<img src="images/commercials/c24.jpg" class="commercial-item" data-commercial="c24">
+<img src="images/commercials/c25.jpg" class="commercial-item" data-commercial="c25">
+
+</div>
+</div>
+<!-- FILM POPUP -->
+<div id="film-popup">
+  <div class="film-popup-content">
+    <span id="close-film">×</span>
+    <h2 id="film-title"></h2>
+    <div id="film-text"></div>
+  </div>
+</div>
+
+<!-- COMMERCIAL POPUP -->
+<div id="commercial-popup">
+  <div class="commercial-popup-content">
+    <span id="close-commercial">×</span>
+    <h2 id="commercial-title"></h2>
+    <p id="commercial-text"></p>
+    <a id="commercial-link" target="_blank">▶ Watch commercial</a>
+  </div>
+</div>
+<!-- MUSIC VIDEOS -->
+<div id="music-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+
+  <h1 class="music-title">MUSIC VIDEOS</h1>
+
+  <div class="music-row">
+    <a href="https://youtu.be/KHIZZrKxn5o?si=LZ-601CpiNBItZcf" target="_blank" class="music-card">
+      <img src="images/music/souly.jpg">
+      <span class="music-link">Watch music video</span>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=BGxBY7atiY8" target="_blank" class="music-card">
+      <img src="images/music/second.jpg">
+      <span class="music-link">Watch music video</span>
+    </a>
+  </div>
+</div>
+<!-- DATA OF LANUKA -->
+<div id="data-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+
+  <h1 class="data-title">DATA OF LANUKA</h1>
+
+<div class="data-row">
+
+  <!-- VISUALISATION 1 -->
+  <div class="data-embed">
+    <h2 class="data-subtitle">Positions I’ve Worked In and Duration</h2>
+
+    <div class="flourish-embed flourish-chart" data-src="visualisation/26976760">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/26976760/thumbnail"
+             width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+  </div>
+
+  <!-- VISUALISATION 2 -->
+  <div class="data-embed">
+    <h2 class="data-subtitle">My Projects by Type</h2>
+
+    <div class="flourish-embed flourish-chart" data-src="visualisation/26976705">
+      <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/26976705/thumbnail"
+             width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<!-- END OF THE BRAIN -->
+<div id="end-screen" class="screen">
+  <div class="back-btn">← BACK</div>
+
+  <div class="end-layout">
+
+    <!-- LEFT: TEXT -->
+    <div class="end-text">
+      <p>
+        Also, I have worked on some films, TV shows,
+        and commercials in casting, which have not been released yet.
+      </p>
+
+      <p>
+        I live in Georgia, but I am willing to travel to other countries
+        to gain new skills and experiences in job positions I may be suitable for.
+      </p>
+
+      <p class="end-thanks">
+        If you’ve made it here — thank you so much for reviewing my portfolio!
+      </p>
+
+      <div class="end-contact">
+        <strong>CONTACT</strong><br><br>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a><br>
+        WhatsApp: +995 551 51 36 00<br>
+        Email: kikalishvililana@gmail.com
+      </div>
+    </div>
+
+    <!-- RIGHT: IMAGE -->
+    <div class="end-image">
+      <img src="images/end/lanuka-end.jpg" alt="Lanuka portrait">
+    </div>
+
+  </div>
+</div>
+
+<!-- LOAD JS AT THE VERY END -->
+<script src="script.js"></script>
+</body>
+</html>
